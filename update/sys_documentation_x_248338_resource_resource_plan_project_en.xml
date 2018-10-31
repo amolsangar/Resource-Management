@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="project" label="Project" language="en" table="x_248338_resource_resource_plan">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>project</element>
+            <help/>
+            <hint/>
+            <label>Project</label>
+            <language>en</language>
+            <name>x_248338_resource_resource_plan</name>
+            <plural>Projects</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-06 07:58:10</sys_created_on>
+            <sys_id>f6a7d33c37b31300d4728cf6c3990e33</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Project</sys_name>
+            <sys_package display_value="Resource Management" source="x_248338_resource">89a55f7837b31300d4728cf6c3990e6f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resource Management">89a55f7837b31300d4728cf6c3990e6f</sys_scope>
+            <sys_update_name>sys_documentation_x_248338_resource_resource_plan_project_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-06 07:58:10</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

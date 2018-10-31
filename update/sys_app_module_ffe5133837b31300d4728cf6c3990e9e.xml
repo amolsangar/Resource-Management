@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_app_module">
+    <sys_app_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Resource Management">81a5dfb837b31300d4728cf6c3990e14</application>
+        <assessment/>
+        <content_page/>
+        <device_type/>
+        <filter/>
+        <hint/>
+        <homepage/>
+        <image/>
+        <link_type>LIST</link_type>
+        <map_page/>
+        <mobile_title>Resource plans</mobile_title>
+        <mobile_view_name>Mobile</mobile_view_name>
+        <name>x_248338_resource_resource_plan</name>
+        <order>200</order>
+        <override_menu_roles>false</override_menu_roles>
+        <query/>
+        <report/>
+        <roles>admin,demand_management,hr_demand_management,demander_user</roles>
+        <sys_class_name>sys_app_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-06 07:50:36</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ffe5133837b31300d4728cf6c3990e9e</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Resource Plans</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Resource Management" source="x_248338_resource">89a55f7837b31300d4728cf6c3990e6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resource Management">89a55f7837b31300d4728cf6c3990e6f</sys_scope>
+        <sys_update_name>sys_app_module_ffe5133837b31300d4728cf6c3990e9e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-13 07:28:02</sys_updated_on>
+        <timeline_page/>
+        <title>Resource Plans</title>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+        <window_name/>
+    </sys_app_module>
+</record_update>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="oauth_entity">
+    <oauth_entity action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <access_token_lifespan>1800</access_token_lifespan>
+        <active>true</active>
+        <auth_code_lifespan>0</auth_code_lifespan>
+        <auth_url>https://login.microsoftonline.com/07b911c1-00a8-48f8-8835-96928ee12425/oauth2/authorize</auth_url>
+        <certificate_url/>
+        <client_id>406bfd8e-afd3-48ca-90b7-5ff6c57384a2</client_id>
+        <client_secret>aiOBOfY0w3a2zfWSA823+9GAIB6TdRr9mUNF2jdJ7hi4SHNHztZfqH1b1hn9LzSd</client_secret>
+        <client_uuid>9944100437102300d4728cf6c3990edd</client_uuid>
+        <comments/>
+        <default_grant_type>client_credentials</default_grant_type>
+        <id_token_lifespan>0</id_token_lifespan>
+        <logo_url/>
+        <message_signature_lifespan>0</message_signature_lifespan>
+        <name>Azure OAuth</name>
+        <oauth_api_script/>
+        <redirect_url>https://dev54294.service-now.com/oauth_redirect.do</redirect_url>
+        <refresh_token_lifespan>8640000</refresh_token_lifespan>
+        <revoke_token_url/>
+        <salt>0</salt>
+        <sys_class_name>oauth_entity</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-28 07:17:44</sys_created_on>
+        <sys_id>5d44100437102300d4728cf6c3990edd</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Azure OAuth</sys_name>
+        <sys_package display_value="Resource Management" source="x_248338_resource">89a55f7837b31300d4728cf6c3990e6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resource Management">89a55f7837b31300d4728cf6c3990e6f</sys_scope>
+        <sys_update_name>oauth_entity_5d44100437102300d4728cf6c3990edd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-09-12 06:58:56</sys_updated_on>
+        <token_url>https://login.microsoftonline.com/07b911c1-00a8-48f8-8835-96928ee12425/oauth2/token</token_url>
+        <type>oauth_provider</type>
+        <user/>
+    </oauth_entity>
+</record_update>

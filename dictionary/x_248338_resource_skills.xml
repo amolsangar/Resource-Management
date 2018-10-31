@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Skills" max_length="40" name="x_248338_resource_skills" type="collection">
+        <element display="true" label="Primary Skills" max_length="40" name="primary_skills" type="string"/>
+        <element label="Secondary Skills" max_length="40" name="secondary_skills" type="string"/>
+    </element>
+</database>

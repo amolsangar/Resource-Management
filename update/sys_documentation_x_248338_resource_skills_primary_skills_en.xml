@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="primary_skills" label="Primary Skills" language="en" table="x_248338_resource_skills">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>primary_skills</element>
+            <help/>
+            <hint/>
+            <label>Primary Skills</label>
+            <language>en</language>
+            <name>x_248338_resource_skills</name>
+            <plural>Primary Skills</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-08-27 05:52:05</sys_created_on>
+            <sys_id>ec340b2337c42300d4728cf6c3990e61</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Primary Skills</sys_name>
+            <sys_package display_value="Resource Management" source="x_248338_resource">89a55f7837b31300d4728cf6c3990e6f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Resource Management">89a55f7837b31300d4728cf6c3990e6f</sys_scope>
+            <sys_update_name>sys_documentation_x_248338_resource_skills_primary_skills_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-08-27 05:52:05</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sysrule_view">
+    <sysrule_view action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <advanced>true</advanced>
+        <condition/>
+        <description/>
+        <device_type>browser</device_type>
+        <match_conditions>ALL</match_conditions>
+        <name>Demander User View</name>
+        <order>100</order>
+        <overrides_user_preference>true</overrides_user_preference>
+        <script><![CDATA[(function overrideView(view, is_list) {
+
+	// Add your code here
+	if (gs.hasRole("demander_user")) {
+		answer = 'Demander_User';  // set the new view to answer
+	}
+})(view, is_list);]]></script>
+        <sys_class_name>sysrule_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-19 17:56:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8fcc90d937442300d4728cf6c3990e93</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Demander User View</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Resource Management" source="x_248338_resource">89a55f7837b31300d4728cf6c3990e6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resource Management">89a55f7837b31300d4728cf6c3990e6f</sys_scope>
+        <sys_update_name>sysrule_view_8fcc90d937442300d4728cf6c3990e93</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-23 10:40:51</sys_updated_on>
+        <table>x_248338_resource_resource_plan</table>
+        <view/>
+    </sysrule_view>
+</record_update>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>true</active>
+        <api_name>x_248338_resource.GetAttachmentCount</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetAttachmentCount</name>
+        <script><![CDATA[var GetAttachmentCount = Class.create();
+GetAttachmentCount.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	
+	getAttachmentCount: function() {
+
+		var sys_id = this.getParameter('sysparm_sys_id');
+
+		var attachRec = new GlideRecord("sys_attachment");
+		attachRec.addQuery("table_name", 'x_248338_resource_resource_plan');
+		attachRec.addQuery("table_sys_id", sys_id);
+		attachRec.query();
+		
+		return attachRec.getRowCount();
+	},
+	type: 'GetAttachmentCount'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-19 07:22:14</sys_created_on>
+        <sys_id>0fe246c137002300d4728cf6c3990e95</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>GetAttachmentCount</sys_name>
+        <sys_package display_value="Resource Management" source="x_248338_resource">89a55f7837b31300d4728cf6c3990e6f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Resource Management">89a55f7837b31300d4728cf6c3990e6f</sys_scope>
+        <sys_update_name>sys_script_include_0fe246c137002300d4728cf6c3990e95</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-19 08:07:33</sys_updated_on>
+    </sys_script_include>
+</record_update>

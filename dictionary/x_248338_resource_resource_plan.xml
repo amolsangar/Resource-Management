@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element audit="true" label="Resource Plan" max_length="40" name="x_248338_resource_resource_plan" type="collection">
+        <element label="Assignee" max_length="32" name="assignee" reference="sys_user" type="reference"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="Candidate Name/s" max_length="1024" name="candidate" reference="sys_user" type="glide_list"/>
+        <element choice="3" default="low" label="Criticality" max_length="40" name="criticality" type="choice">
+            <choice>
+                <element label="Low" sequence="1" value="low"/>
+                <element label="Medium" sequence="2" value="medium"/>
+                <element label="High" sequence="3" value="high"/>
+            </choice>
+        </element>
+        <element default="javascript:gs.now()" dynamic_default_value="fb7553e85f220100a9ad2572f2b477b4" label="Demand Date" max_length="40" name="demand_date" read_only="true" type="glide_date" use_dynamic_default="true"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Evaluation Action" max_length="40" name="evaluate_action" type="string">
+            <choice>
+                <element label="Process for Hiring" sequence="0" value="process"/>
+                <element label="Request for New Profile" sequence="1" value="new_profile"/>
+            </choice>
+        </element>
+        <element label="Expected Start Date" mandatory="true" max_length="40" name="expected_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Candidate Name" max_length="40" name="hr_candidate" type="string"/>
+        <element label="HR Name" max_length="32" name="hr_name" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="open" label="Status" max_length="40" name="hr_status" type="string">
+            <choice>
+                <element label="Open" sequence="0" value="open"/>
+                <element label="Resubmit" sequence="1" value="resubmit"/>
+                <element label="Offered" sequence="2" value="offered"/>
+                <element label="Evaluate" sequence="3" value="evaluate"/>
+            </choice>
+        </element>
+        <element label="Joining Date" max_length="40" name="joining_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="500" name="note" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Notes" max_length="4000" name="notes" type="journal"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Project" mandatory="true" max_length="40" name="project" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Remark" max_length="4000" name="remark" type="journal"/>
+        <element label="Portfolio Unit (PU)" mandatory="true" max_length="40" name="roles" type="string"/>
+        <element label="Skills Required" mandatory="true" max_length="200" name="skills_required" type="string"/>
+        <element choice="1" label="Source" max_length="40" name="source" type="string">
+            <choice>
+                <element label="Internal" sequence="0" value="internal"/>
+                <element label="External" sequence="1" value="external"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="temp" max_length="40" name="temp" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="unlocked" label="temp2" max_length="40" name="temp2" type="string">
+            <choice>
+                <element label="Unlocked" sequence="0" value="unlocked"/>
+                <element label="Locked" sequence="1" value="locked"/>
+            </choice>
+        </element>
+        <element label="TSIN Requestor" max_length="32" name="tsin_requestor" read_only="true" reference="sys_user" type="reference"/>
+        <element label="TSI Requester" mandatory="true" max_length="40" name="tsi_requester" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="internal" label="Type" max_length="40" name="u_choice_1" type="string">
+            <choice>
+                <element label="Internal" sequence="0" value="internal"/>
+                <element label="External" sequence="1" value="external"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="Status" max_length="40" name="u_choice_8" type="string">
+            <choice>
+                <element label="Open" sequence="0" value="open"/>
+                <element label="New" sequence="1" value="new"/>
+                <element label="Assign to HR" sequence="2" value="assign"/>
+                <element label="Complete" sequence="3" value="complete"/>
+            </choice>
+        </element>
+        <element label="Profile Shared Date" max_length="40" name="u_glide_date_5" type="glide_date"/>
+        <element default="javascript:gs.nowDateTime()" dynamic_default_value="79cb83a85f220100a9ad2572f2b4773c" label="Demand Date" max_length="40" name="u_glide_date_time_1" read_only="true" type="glide_date_time" use_dynamic_default="true"/>
+        <element label="Expected Start Date" max_length="40" name="u_glide_date_time_2" type="glide_date_time"/>
+        <element attributes="no_sort=true,slushbucket_ref_no_expand=true" label="New List" max_length="1024" name="u_glide_list_11" type="glide_list"/>
+        <element dependent="location" dependent_on_field="location" label="Location" mandatory="true" max_length="32" name="u_reference_9" reference="x_248338_resource_location" type="reference" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="No of Resources" max_length="40" name="u_string_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Cost Center No" max_length="40" name="u_string_4" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Candidate Name" max_length="40" name="u_string_6" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Remark" max_length="500" name="u_string_7" type="string"/>
+        <index name="index">
+            <element name="assignee"/>
+        </index>
+        <index name="index2">
+            <element name="tsin_requestor"/>
+        </index>
+        <index name="index3">
+            <element name="u_reference_9"/>
+        </index>
+        <index name="index4">
+            <element name="hr_name"/>
+        </index>
+    </element>
+</database>

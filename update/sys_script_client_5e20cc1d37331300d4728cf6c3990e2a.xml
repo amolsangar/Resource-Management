@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>Displays fields according to User roles.</description>
+        <field>u_string_6</field>
+        <global>true</global>
+        <messages/>
+        <name>Form_manager_script</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+    if (g_user.hasRole("demander_user")) {
+        //alert("running");
+        g_form.setSectionDisplay("demand_management", false);
+		g_form.setSectionDisplay("human_resource", false);
+	
+		g_form.setValue("u_choice_8","new");
+
+
+    } else
+    if (g_user.hasRole("demand_management")) {
+		
+        //alert("role is demand management");
+		if(g_form.getValue('hr_status') != 'offered')
+			g_form.setVisible('joining_date',false);
+
+        g_form.setMandatory("u_string_4", true);
+        g_form.setMandatory("u_choice_8", true);
+
+        g_form.setMandatory("project", false);
+        g_form.setMandatory("roles", false);
+        g_form.setMandatory("u_reference_9", false);
+        g_form.setMandatory("skills_required", false);
+        g_form.setMandatory("source", false);
+		g_form.setMandatory("tsi_requestor", false);
+		g_form.setMandatory("expected_start_date", false);
+
+        g_form.setReadOnly("project", true);
+        g_form.setReadOnly("skills_required", true);
+        g_form.setReadOnly("criticality", true);
+        g_form.setReadOnly("demand_date", true);
+        g_form.setReadOnly("tsi_requester", true);
+        g_form.setReadOnly("roles", true);
+        g_form.setReadOnly("u_reference_9", true);
+        g_form.setReadOnly("source", true);
+        g_form.setReadOnly("expected_start_date", true);
+    } 
+	else if (g_user.hasRole("hr_demand_management")) {
+        //alert("HR");
+	
+		g_form.elements.forEach(function (e, i) {
+			g_form.setMandatory(e.fieldName, false);
+			g_form.setReadOnly(e.fieldName, true);
+		});
+		
+		g_form.setReadOnly("hr_status", false);
+		g_form.setReadOnly("joining_date", false);
+		g_form.setReadOnly("assignee", false);
+		g_form.setReadOnly("note", false);
+
+		g_form.setMandatory("status", true);
+		g_form.setMandatory("assignee", true);
+	
+		if(g_form.getValue('hr_status') != 'offered')
+			g_form.setVisible('joining_date',false);
+		/*var fields = g_form.getEditableFields();
+        for (var x = 0; x < fields.length; x++) {
+
+            g_form.setReadOnly(fields[x], true);
+
+        }*/
+
+    }
+
+    //Type appropriate comment here, and begin script below
+
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-08-07 05:36:18</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>5e20cc1d37331300d4728cf6c3990e2a</sys_id>
+        <sys_mod_count>70</sys_mod_count>
+        <sys_name>Form_manager_script</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Resource Management" source="x_248338_resource">89a55f7837b31300d4728cf6c3990e6f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Resource Management">89a55f7837b31300d4728cf6c3990e6f</sys_scope>
+        <sys_update_name>sys_script_client_5e20cc1d37331300d4728cf6c3990e2a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-08-09 09:51:26</sys_updated_on>
+        <table>x_248338_resource_resource_plan</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
